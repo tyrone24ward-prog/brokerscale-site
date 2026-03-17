@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "BrokerScale AI — Automated Growth Systems for Real Estate Brokerages",
   description: "We build AI-powered automation systems that help real estate brokerages respond to leads instantly, recruit agents on autopilot, and close more deals — without adding to your team's workload.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/logo-icon.jpg",
+    apple: "/logo-icon.jpg",
   },
   openGraph: {
     title: "BrokerScale AI",

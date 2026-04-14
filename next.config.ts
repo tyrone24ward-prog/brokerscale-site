@@ -2,9 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["stripe"],
-  experimental: {
-    turbo: undefined,
-  },
+
   allowedDevOrigins: ["127.0.0.1", "localhost", "::1"],
   poweredByHeader: false,
   reactStrictMode: true,

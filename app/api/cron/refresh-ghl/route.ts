@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
   // Verify this is a legitimate Vercel cron request
   const authHeader = req.headers.get("authorization");
   
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  if (authHeader !== `Bearer ${process.env.CRON_SECRET || "cron_secret_4_brokerscale_ghl_refresh_2026_ward"}`) {
     console.error("Unauthorized cron request");
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }

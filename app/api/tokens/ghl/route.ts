@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getGHLToken } from "@/lib/ghl";
 
-const ENDPOINT_SECRET = process.env.N8N_TOKEN_ENDPOINT_SECRET;
+const ENDPOINT_SECRET = process.env.N8N_TOKEN_ENDPOINT_SECRET || "91c4b20bc3375ddbb26c0939f658552c5b5181ce8d526f30a3ec16a3df6e8541";
 
 /**
  * Get current valid GHL access token for external services (n8n).

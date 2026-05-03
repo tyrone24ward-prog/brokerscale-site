@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Terms and conditions for using BrokerScale AI website and automation services for real estate brokerages.",
+  alternates: { canonical: "/terms" },
+  openGraph: {
+    title: "Terms & Conditions | BrokerScale AI",
+    url: `${SITE_URL}/terms`,
+  },
+};
 
 export default function TermsAndConditions() {
   return (

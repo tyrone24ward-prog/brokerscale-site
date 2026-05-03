@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How BrokerScale AI collects, uses, and protects your information when you use our website and automation services.",
+  alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy Policy | BrokerScale AI",
+    url: `${SITE_URL}/privacy`,
+  },
+};
 
 export default function PrivacyPolicy() {
   return (

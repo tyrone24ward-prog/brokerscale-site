@@ -1,9 +1,8 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ["stripe"],
-
-  allowedDevOrigins: ["127.0.0.1", "localhost", "::1"],
+  // Do not set `allowedDevOrigins` unless every dev/proxy hostname is listed: when set, Next
+  // blocks cross-origin `/_next/*` requests (403) instead of only warning.
   poweredByHeader: false,
   reactStrictMode: true,
   images: {

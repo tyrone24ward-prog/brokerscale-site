@@ -3,6 +3,11 @@ import { getGHLToken } from "@/lib/ghl";
 
 const ENDPOINT_SECRET = process.env.N8N_TOKEN_ENDPOINT_SECRET;
 
+/**
+ * Get current valid GHL access token for external services (n8n).
+ * Requires shared secret authentication.
+ * Auto-refreshes tokens if near expiry.
+ */
 export async function GET(req: NextRequest) {
   // Check authentication
   const authorization = req.headers.get("authorization");
